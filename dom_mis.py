@@ -37,7 +37,7 @@ def generate_graph_from_similarity_matrix(min_similarity_threshold, na_handling_
 def run_dom_mis(run_id, similarity_thresholds, save_results=False):
     set_random_seed(run_id*100)
     id_columns=['suite','fid', 'iid']
-    for na_handling_setting_name in ['dropna','fillna']:
+    for na_handling_setting_name in ['dropna']:
 
 
         for min_similarity_threshold in similarity_thresholds:

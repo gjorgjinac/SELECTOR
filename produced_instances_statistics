@@ -1,0 +1,13 @@
+\begin{tabular}{llrrrr}
+\toprule
+    &     &  edge count &  min &  max &   mean \\
+min similarity threshold & algorithm &             &      &      &        \\
+\midrule
+0.5 & DS &       34642 &    7 &   10 &   8.73 \\
+    & MIS &       34642 &    8 &   10 &   8.77 \\
+0.7 & DS &       32275 &   11 &   15 &  12.77 \\
+    & MIS &       32275 &   11 &   15 &  12.37 \\
+0.9 & DS &       30513 &   31 &   35 &  32.97 \\
+    & MIS &       30513 &   31 &   35 &  33.33 \\
+\bottomrule
+\end{tabular}
