@@ -23,5 +23,6 @@ print(df_fillna.shape)
 
 
 for na_handling_setting_name, df_without_na in [('dropna', df_dropna), ('fillna', df_fillna)]:
-    ela_representation_df = df_without_na.groupby(id_columns).median()
+    ela_features_to_consider=set(df_without_na.columns).intersection(set(ela_feature_names))
+    ela_representation_df = df_without_na.groupby(id_columns).median()[ela_features_to_consider]
     ela_representation_df.to_csv(f'data/aggregated_ela_representation_{na_handling_setting_name}.csv')

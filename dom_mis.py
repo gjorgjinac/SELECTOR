@@ -13,7 +13,8 @@ def set_random_seed(seed):
     np.random.seed(seed)
     random.seed(seed)
     
-def generate_graph_from_similarity_matrix(min_similarity_threshold, na_handling_setting_name):
+def generate_graph_from_similarity_matrix(min_similarity_threshold, na_handling_setting_name='dropna'):
+
     ela_representation_df = pd.read_csv(f'data/aggregated_ela_representation_{na_handling_setting_name}.csv', index_col=[0,1,2])
     s = cosine_similarity(ela_representation_df.values,ela_representation_df.values)
     similarity_df=pd.DataFrame(s,index=ela_representation_df.index,columns=ela_representation_df.index)
