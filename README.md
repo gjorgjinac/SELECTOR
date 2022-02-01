@@ -1,5 +1,5 @@
 ##SELECTOR: Selecting a Representative Benchmark Suite for Reproducible Statistical Comparison
-
+![SELECTOR methodology pipeline](selector_pipeline.pdf)
 - Problem Instance Representation 
   - `ela_feature_definition.py` - Definition of the ELA features used for representing problem instances
   - `aggregate_ela.py` - Generation of representations for each problem instance by taking the median of the ELA features calculated in 30 different runs
