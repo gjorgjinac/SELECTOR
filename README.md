@@ -2,6 +2,17 @@
 
 ![SELECTOR methodology pipeline](visualizations/selector_pipeline.pdf)
 
+### Setup
+Python 3.7 or 3.8 is recommended to be used.
+
+All of the required libraries are listed in the _requirements.txt_ file and can be installed using the following command:
+
+- `cat requirements.txt | xargs -n 1 pip install` (Linux)
+
+- `FOR /F %k in (requirements.txt) DO pip install %k` (Windows)
+
+### Usage
+
 - Run All Instance Selection heuristics:
   - `run_all.sh` - Run the Clustering and 30 runs of the Graph Theory Algorithms
 
