@@ -1,6 +1,6 @@
 #!/bin/bash
 export PYTHONHASHSEED=42
-pip install -r
+
 python aggregate_ela.py
 
 python clustering.py

@@ -1,11 +1,14 @@
 ## SELECTOR: Selecting a Representative Benchmark Suite for Reproducible Statistical Comparison
 
 ![SELECTOR methodology pipeline](visualizations/selector_pipeline.pdf)
+The figure gives an overview of the proposed methodology. Given a set of benchmarks, the first step involves generating a vectorized representation for each problem instance using Exploratory Landscape Analysis (ELA) features. The heuristic which performs instance selection using clustering then proceeds to cluster the representations of all problem instances and perform sampling to identify a set of instances which will uniformly cover the problem landscape.
+On the other hand, the heuristics which perform instance selection using graph theory algorithms construct a graph based on the similarity of the problem instances, and identify a subset of instances on which the algorithms should be compared, by applying the algorithms for finding Dominating Sets(DS) and Maximal Independent Sets(MIS) in the graph.
+Once the instances are selected by each heuristic, a statistical algorithm performance analysis is conducted by comparing the algorithms' performance on the instances selected by each heuristic independently. We further show that the selected instances from each heuristic enable a consistent and robust statistical analysis, as opposed to using a single benchmark.
 
 ### Setup
 Python 3.7 or 3.8 is recommended to be used.
 
-All of the required libraries are listed in the _requirements.txt_ file and can be installed using the following command:
+All of the required libraries are listed in the `requirements.txt` file and can be installed using the following command:
 
 - `cat requirements.txt | xargs -n 1 pip install` (Linux)
 
