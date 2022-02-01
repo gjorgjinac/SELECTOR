@@ -2,7 +2,7 @@ from dom_mis import run_dom_mis
 import argparse
 from typing import List
 
-similarity_thresholds=[0.97]
+similarity_thresholds=[0.9,0.95,0.97]
 parser = argparse.ArgumentParser()
 parser.add_argument('--run_id', required=True, type=int)
 
