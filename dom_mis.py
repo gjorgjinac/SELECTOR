@@ -31,8 +31,6 @@ def generate_graph_from_similarity_matrix(min_similarity_threshold, na_handling_
                 continue
             if row1[index2] > min_similarity_threshold:
                 g.add_edge(index1, index2)
-            if i % 1000000 == 0:
-                print(f'{100 * round(i / (similarity_df.shape[0] * similarity_df.shape[0]), 2)}%')
     return g
 
 
