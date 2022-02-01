@@ -1,12 +1,5 @@
 import pandas as pd
-import numpy as np
-from networkx import Graph, write_adjlist
-from sklearn.metrics.pairwise import cosine_similarity
-from collections import defaultdict
 from ela_feature_definition import ela_feature_names
-from networkx.algorithms.dominating import dominating_set
-from networkx.algorithms.mis import maximal_independent_set
-
 
 df = pd.read_csv('data/ela.csv', index_col=[0])
 ela_df=df[ela_feature_names]
