@@ -1,0 +1,3 @@
+"AlmostRotationInvariantDE"	"MilliCMA"
+"MilliCMA"	15	NA
+"RealSpacePSO"	15	15

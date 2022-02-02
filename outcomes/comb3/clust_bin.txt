@@ -1,0 +1,3 @@
+"NewPSO"	"RealSpacePSO"
+"RealSpacePSO"	15	NA
+"SQP"	15	15

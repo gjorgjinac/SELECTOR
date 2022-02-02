@@ -1,0 +1,3 @@
+"ECMA"	"MilliCMA"
+"MilliCMA"	15	NA
+"NewPSO"	15	15
